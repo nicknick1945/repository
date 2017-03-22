@@ -1,5 +1,6 @@
 package ru.mycompany.main.neuronswide.neuron_wide.interfaces;
 
+
 import ru.mycompany.main.neuronswide.neuron_wide.exceprions.layerExceptions.HaveNotPreviousLayerException;
 import ru.mycompany.main.neuronswide.neuron_wide.exceprions.layerExceptions.HoveNotNextLayerException;
 
