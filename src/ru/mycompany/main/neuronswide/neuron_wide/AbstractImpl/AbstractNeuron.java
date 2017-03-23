@@ -11,7 +11,7 @@ public abstract class AbstractNeuron implements Neuron{
     protected abstract double doActivationFunction();
 
     @Override
-    public double getState() {
+    public Object getState() {
          return doActivationFunction();
     }
 

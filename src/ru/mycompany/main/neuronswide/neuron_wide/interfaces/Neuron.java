@@ -9,7 +9,7 @@ public interface Neuron {
      * вернуть состояние состояние после применения активирующицй фкнции
      * @return
      */
-    double getState();
+    Object getState();
 
     /**
      * а это я чет не совсем понял нахрена придумал
