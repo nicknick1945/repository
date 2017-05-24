@@ -12,26 +12,22 @@ import java.util.List;
  */
 
 public class LinksFactory {
-    public static Link[]  createLinks(int countLinks ,Class  linkImplClass) throws Exception{
 
-        if (!isImplementedLinkInterface(linkImplClass)){
-            throw new IlligalTypeException();
-        }
-        List<Link> links = new ArrayList<>();
+    public static Link[] createLinks(int countLinks, Class linkImplClass) throws Exception {
 
-        for (int i = 0; i < countLinks; i++){
-            links.add( (Link) linkImplClass.newInstance());
-        }
-
-        return  (Link[]) links.toArray();
-    }
-
-    private  static boolean isImplementedLinkInterface(Class clazz_){
-        for (Class clazz : clazz_.getInterfaces()){
-            if (clazz.getName().equals(Link.class.getName())){
-                return true;
+        Link[] links = new Link[countLinks];
+        boolean isPlus = true;
+        for (int i = 0; i < countLinks; i++) {
+            try {
+                links[i] = ((Link) linkImplClass.newInstance());
+                links[i].setMultiplexer(isPlus?Math.random()*2:-Math.random()*2);
+                isPlus = !isPlus;
+            }catch (Exception e){
+                throw new IlligalTypeException();
             }
         }
-        return false;
+        return links;
     }
 }
+
+

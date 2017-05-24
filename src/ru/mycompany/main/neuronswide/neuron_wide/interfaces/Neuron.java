@@ -11,17 +11,13 @@ public interface Neuron {
      */
     Object getState();
 
-    /**
-     * а это я чет не совсем понял нахрена придумал
-     */
-    void setState();
 
     /**
-     * может вернуть массив своих входов(для обучения полезно например)
+     * может вернуть массив своих входов
      * @return массив входов
      *
      */
     Link[] getLinks();
 
-
+    void setLinks(Link[] links);
 }

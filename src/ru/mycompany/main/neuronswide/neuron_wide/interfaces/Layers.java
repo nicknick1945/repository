@@ -1,6 +1,8 @@
 package ru.mycompany.main.neuronswide.neuron_wide.interfaces;
 
 
+import ru.mycompany.main.neuronswide.neuron_wide.exceprions.layerExceptions.HaveNotPreviousLayerException;
+
 public interface Layers {
 
     /**Добавление нецронного слоя в нейросеть
@@ -42,7 +44,7 @@ public interface Layers {
      * @param sample обработать данные
      * @return массив значений с выходного слоя нейронов
      */
-    double[] doRecognize(Sample sample);
+     Object doRecognize(Object sample) throws HaveNotPreviousLayerException;
 
     /** Функция которая вызавает непосредственно основной функционал нейросети  ,а именно анализировать входные значения
      * только в этом случае вернет преобрахованное значение

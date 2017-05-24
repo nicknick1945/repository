@@ -1,9 +1,9 @@
 package ru.mycompany.main.neuronswide.neuron_wide.AbstractImpl;
 
+import ru.mycompany.main.neuronswide.neuron_wide.exceprions.layerExceptions.HaveNotPreviousLayerException;
 import ru.mycompany.main.neuronswide.neuron_wide.interfaces.*;
 
 public abstract class AbstractNeuronsWide implements NeuronWide {
-
 
     private Layers layers;              // нейронные слои
     private int inputSize;              // размер входного векторв
@@ -14,15 +14,14 @@ public abstract class AbstractNeuronsWide implements NeuronWide {
     }
 
     @Override
-    public Adapter doRecognize(Adapter adapter, Sample sample) {
-        return layers.doRecognize(adapter,sample);
+    public Object doRecognize(Adapter adapter, Sample sample) throws HaveNotPreviousLayerException {
+        return adapter.getValue(layers.doRecognize(sample));
     }
 
     @Override
-    public double[] doRecognize(Sample sample) {
+    public Object doRecognize(Object sample) throws HaveNotPreviousLayerException {
         return layers.doRecognize(sample);
     }
-
 
 /////////////////////////////геттеры сеттеры //////////////////////////////
 

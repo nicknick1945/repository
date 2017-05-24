@@ -5,6 +5,7 @@ import ru.mycompany.main.neuronswide.neuron_wide.exceprions.layerExceptions.Hove
 import ru.mycompany.main.neuronswide.neuron_wide.exceprions.layerExceptions.HaveNotPreviousLayerException;
 import ru.mycompany.main.neuronswide.neuron_wide.interfaces.Neuron;
 import ru.mycompany.main.neuronswide.neuron_wide.interfaces.NeuronsLayer;
+import ru.mycompany.main.neuronswide.neuron_wide.interfaces.Sample;
 
 
 public abstract class AbstractLayer implements NeuronsLayer {
@@ -12,6 +13,20 @@ public abstract class AbstractLayer implements NeuronsLayer {
     private Neuron[] neurons ;
     private NeuronsLayer previousLayer;
     private NeuronsLayer nextLayer;
+
+    @Override
+    public Object doRecognize(Object sample) throws HaveNotPreviousLayerException {
+
+        if (isFirstLevel()){
+            return recognizeFunction(sample);
+        }else{
+            Object object = getPreviousLayer().doRecognize(sample);
+            return recognizeFunction(object);
+        }
+    }
+
+    //эта функция как раз доолжна проделовать всякие штуки с картами
+    protected abstract Object recognizeFunction(Object object);
 
     @Override
     public abstract  void learnLevel(Object[]... args) ;
@@ -65,8 +80,7 @@ public abstract class AbstractLayer implements NeuronsLayer {
         this.nextLayer = neuronsLayer ;
     }
 
-    @Override
-    public Neuron[] getNeurons() {
+    @Override    public Neuron[] getNeurons() {
         return neurons;
     }
 
@@ -74,5 +88,6 @@ public abstract class AbstractLayer implements NeuronsLayer {
     public void setNeurons(Neuron[] neurons) {
         this.neurons = neurons;
     }
+
 
 }

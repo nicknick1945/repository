@@ -6,11 +6,11 @@ import ru.mycompany.main.neuronswide.neuron_wide.interfaces.Neuron;
 
 public abstract class AbstractLink implements Link {
 
-    private Neuron enterNeuron;     //нейрон выход которого подается на вход связи
+    double state = 0 ;
     private double multiplexer;     // коффициент умножения , он же весовой коэффициент
 
-    public double getValue (double enterValue){
-            return  enterValue*multiplexer;
+    public double getValue (){
+            return multiplexer*state;   //todo подумать головой
     }
 
     public double getMultiplexer() {
@@ -21,11 +21,10 @@ public abstract class AbstractLink implements Link {
         this.multiplexer = multiplexer;
     }
 
-    public Neuron getEnterNeuron() {
-        return enterNeuron;
+    @Override
+    public void setState(double state) {
+        this.state = state;
     }
 
-    public void setEnterNeuron(Neuron enterNeuron) {
-        this.enterNeuron = enterNeuron;
-    }
+
 }

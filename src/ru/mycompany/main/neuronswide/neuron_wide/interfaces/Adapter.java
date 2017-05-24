@@ -6,6 +6,7 @@ package ru.mycompany.main.neuronswide.neuron_wide.interfaces;
  */
 public interface Adapter {
 
-    Adapter getValue();
+    Object getValue(Object somethingObject);
+
 
 }

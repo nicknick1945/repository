@@ -70,5 +70,11 @@ public interface NeuronsLayer {
      */
     Neuron[] getNeurons();
 
+    /**
+     * @return возвращет какоц-то обьект
+     */
+    Object doRecognize(Object semple) throws HaveNotPreviousLayerException;
+
+
 
 }

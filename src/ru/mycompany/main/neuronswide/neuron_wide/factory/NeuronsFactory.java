@@ -5,6 +5,7 @@ import ru.mycompany.main.neuronswide.neuron_wide.exceprions.factoryExcptions.Ill
 import ru.mycompany.main.neuronswide.neuron_wide.interfaces.Neuron;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /*Класс фабрика нейронов */
@@ -20,25 +21,16 @@ public class NeuronsFactory {
      */
     public static Neuron[] createNeurons(int countNeurons,Class neuronsImplClass) throws Exception {
 
-        if (!isImplementedNeuronInterface(neuronsImplClass)){
-            throw  new IlligalTypeException();
-        }
-        List<Neuron> neurons = new ArrayList<>();
+        Neuron[] neurons   = new Neuron[countNeurons];
         for (int i = 0; i < countNeurons; i++){
-            neurons.add( (Neuron) neuronsImplClass.newInstance());
-        }
-
-        return  (Neuron[]) neurons.toArray();
-    }
-
-
-    private  static boolean isImplementedNeuronInterface(Class clazz_){
-        for (Class clazz : clazz_.getInterfaces()){
-            if (clazz.getName().equals(Neuron.class.getName())){
-                return true;
+            try {
+                neurons[i] = ( (Neuron) neuronsImplClass.newInstance());
+            }
+            catch (Exception e ){
+                throw new IlligalTypeException();
             }
         }
-        return false;
-    }
 
+        return neurons;
+    }
 }

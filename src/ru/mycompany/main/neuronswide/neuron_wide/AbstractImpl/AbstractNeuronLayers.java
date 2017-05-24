@@ -11,7 +11,6 @@ public abstract class AbstractNeuronLayers implements Layers {
     private NeuronsLayer last;
     private int size = 0;
 
-
     @Override
     public void addLayer(NeuronsLayer neuronsLayer) throws Exception {
 
@@ -19,8 +18,6 @@ public abstract class AbstractNeuronLayers implements Layers {
             neuronsLayer.setPreviousLayer(last);
             last.setNextLayer(neuronsLayer);
             last = neuronsLayer;
-            bindLayers(last.getPreviousLayer(),last);
-
         }else {
             first = neuronsLayer;
             last = neuronsLayer;
@@ -65,17 +62,14 @@ public abstract class AbstractNeuronLayers implements Layers {
     }
 
     @Override
-    public abstract double[] doRecognize(Sample sample) ;
+    public Object doRecognize(Object sample ) throws HaveNotPreviousLayerException {
+
+        return last.doRecognize(sample);
+    }
+
 
     @Override
     public abstract Adapter doRecognize(Adapter adapter, Sample sample);
-
-    /**
-     * Функуия связывания слоев нейронов (связывает два нейронных слоя между собой)
-     * @param layer1 верхний уровень
-     * @param layer2 уровень после уровня Layer1
-     */
-    public abstract void bindLayers(NeuronsLayer layer1, NeuronsLayer layer2);
 
     private boolean removeFirst() throws Exception {
 
@@ -140,8 +134,6 @@ public abstract class AbstractNeuronLayers implements Layers {
 
         }
 
-        bindLayers(previous,next);  // необходимо сделать новую связку между нейронами
-
         size-- ;
         return true;
     }
@@ -156,6 +148,19 @@ public abstract class AbstractNeuronLayers implements Layers {
         this.size = size;
     }
 
+    public NeuronsLayer getFirst() {
+        return first;
+    }
 
+    public void setFirst(NeuronsLayer first) {
+        this.first = first;
+    }
 
+    public NeuronsLayer getLast() {
+        return last;
+    }
+
+    public void setLast(NeuronsLayer last) {
+        this.last = last;
+    }
 }
