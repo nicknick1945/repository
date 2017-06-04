@@ -1,15 +1,16 @@
 package ru.mycompany.main.neuronswide.neuron_wide.AbstractImpl;
 
+import ru.mycompany.main.neuronswide.neuron_wide.exceprions.CannotRecognizeThisTypeException;
 import ru.mycompany.main.neuronswide.neuron_wide.exceprions.layerExceptions.HaveNotPreviousLayerException;
 import ru.mycompany.main.neuronswide.neuron_wide.interfaces.*;
 
-public abstract class AbstractNeuronsWide implements NeuronWide {
+public abstract class AbstractNeuronsWide implements NeuronNetwork {
 
     private Layers layers;              // нейронные слои
     private int inputSize;              // размер входного векторв
 
     @Override
-    public void doLearn(LearningSample learningSample) {
+    public void doLearn(LearningSample learningSample) throws HaveNotPreviousLayerException {
         layers.learningLevels(learningSample);
     }
 
@@ -19,7 +20,13 @@ public abstract class AbstractNeuronsWide implements NeuronWide {
     }
 
     @Override
-    public Object doRecognize(Object sample) throws HaveNotPreviousLayerException {
+    public Object doRecognize(Object sample) throws HaveNotPreviousLayerException, CannotRecognizeThisTypeException {
+
+        if ( sample instanceof Double[][]){
+            if( ( ( (Double[][])sample).length!=128)&&(( (Double[][])sample)[0].length!=128)){
+                throw new CannotRecognizeThisTypeException();
+            }
+        }
         return layers.doRecognize(sample);
     }
 

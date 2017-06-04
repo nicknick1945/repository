@@ -49,7 +49,7 @@ public class SubsamplingLayer extends AbstractLayer{
     }
 
     @Override
-    public void learnLevel(Object[]... args) {
-
+    public Object learnLevel(Object args) {
+        return null; //todo
     }
 }

@@ -8,11 +8,14 @@ public interface LearningSample {
     /**
      * @return вернем массив обьектов со входными значениями
      */
-    Object[] getInput();
+    Object getInput();
 
     /**
      * @return вернем масив обьектов требуемого выхода
      */
-    double[] getOut();
+    Object getOut();
 
+    public void setInput(double[][] input);
+
+    public void setOut(double[] out);
 }

@@ -9,8 +9,8 @@ import ru.mycompany.main.neuronswide.neuron_wide.interfaces.Neuron;
 public class ConvolutionLayer extends AbstractLayer {
 
     @Override
-    public void learnLevel(Object[]... args) {
-
+    public Object learnLevel(Object args) {
+      return null ; //todo
     }
 
     //напомню , что трехмерный массив , потому , что тут может быть много двумерных карт признаков

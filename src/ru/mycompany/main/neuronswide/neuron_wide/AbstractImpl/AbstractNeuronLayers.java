@@ -56,7 +56,7 @@ public abstract class AbstractNeuronLayers implements Layers {
     public abstract void deleteLevel(NeuronsLayer neuronsLayer) throws DeleteLayerException ;
 
     @Override
-    public void learningLevels(LearningSample learningSample) {
+    public void learningLevels(LearningSample learningSample) throws HaveNotPreviousLayerException {
         LearningSample[] samples = {learningSample} ;
         last.learnLevel(samples);
     }
@@ -140,7 +140,7 @@ public abstract class AbstractNeuronLayers implements Layers {
 
     ////////////////////геттеры и сеттеры ///////////////////////
 
-    protected int getSize(){
+    public int getSize(){
         return size;
     }
 

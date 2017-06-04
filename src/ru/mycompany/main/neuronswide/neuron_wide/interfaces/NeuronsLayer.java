@@ -37,7 +37,7 @@ public interface NeuronsLayer {
      * обучить текущий слой нейронов (одна эпоха обучения)
      * @param args
      */
-    void learnLevel(Object[] ... args);
+    Object learnLevel(Object args);
 
     /**
      * @return вернёт количестве выходов данного слоя (оно равно колличеству нейронов в слое)

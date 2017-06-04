@@ -29,7 +29,7 @@ public abstract class AbstractLayer implements NeuronsLayer {
     protected abstract Object recognizeFunction(Object object);
 
     @Override
-    public abstract  void learnLevel(Object[]... args) ;
+    public abstract  Object learnLevel(Object args) ;
 
     @Override
     public int getOutputSize() {

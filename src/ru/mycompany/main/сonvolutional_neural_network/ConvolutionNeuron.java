@@ -4,5 +4,4 @@ import ru.mycompany.main.neuronswide.neuron_wide.AbstractImpl.AbstractNeuron;
 
 public class ConvolutionNeuron extends AbstractNeuron {
 
-
 }

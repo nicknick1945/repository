@@ -1,17 +1,18 @@
 package ru.mycompany.main.neuronswide.neuron_wide.interfaces;
 
+import ru.mycompany.main.neuronswide.neuron_wide.exceprions.CannotRecognizeThisTypeException;
 import ru.mycompany.main.neuronswide.neuron_wide.exceprions.layerExceptions.HaveNotPreviousLayerException;
 
 /**
  * Интерфейс реализации собственно самой нейросети
  */
-public interface NeuronWide {
+public interface NeuronNetwork {
 
     /**
      * Функция обучения нейросети
      * @param learningSample обуающий семпл
      */
-    void doLearn(LearningSample learningSample);
+    void doLearn(LearningSample learningSample) throws HaveNotPreviousLayerException;
 
     /**
      * Функция которая вызавает непосредственно основной функционал нейросети  ,а именно анализировать входные значения
@@ -26,6 +27,6 @@ public interface NeuronWide {
      * @param sample Входные данные
      * @return набор данных полученные в выходных нейронов
      */
-    Object doRecognize(Object sample) throws HaveNotPreviousLayerException;
+    Object doRecognize(Object sample) throws HaveNotPreviousLayerException, CannotRecognizeThisTypeException;
 
 }

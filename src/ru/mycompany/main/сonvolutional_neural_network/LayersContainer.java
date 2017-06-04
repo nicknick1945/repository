@@ -6,8 +6,10 @@ import ru.mycompany.main.neuronswide.neuron_wide.exceprions.layersExceprions.Ill
 import ru.mycompany.main.neuronswide.neuron_wide.interfaces.Adapter;
 import ru.mycompany.main.neuronswide.neuron_wide.interfaces.NeuronsLayer;
 import ru.mycompany.main.neuronswide.neuron_wide.interfaces.Sample;
-public class LayersContainer extends AbstractNeuronLayers {
 
+
+/**Класс реализующий список нейронных слоев*/
+public class LayersContainer extends AbstractNeuronLayers {
 
     public LayersContainer() throws Exception {
 

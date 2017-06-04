@@ -37,7 +37,7 @@ public interface Layers {
      * Обучить слои , для каждого слоя будет вызвана его обучающая функция
      * @param learningSample обучающий фрагмент
      */
-    void learningLevels(LearningSample learningSample);
+    void learningLevels(LearningSample learningSample) throws HaveNotPreviousLayerException;
 
     /**
      *  Функция которая вызавает непосредственно основной функционал нейросети  ,а именно анализировать входные значения
@@ -53,6 +53,8 @@ public interface Layers {
      * @return вернет обьект адаптер
      */
     Adapter doRecognize(Adapter adapter ,Sample sample);
+
+    public int getSize();
 
 
 }
