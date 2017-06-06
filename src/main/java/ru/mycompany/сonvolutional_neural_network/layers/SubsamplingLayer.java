@@ -21,9 +21,9 @@ public class SubsamplingLayer extends AbstractLayer{
 
                 for( int x = 0 ; x < newCards[0][0].length ; x++ ){
 
-                    double max  = 0 ;
-                    double maxX = 0 ;
-                    double maxY = 0 ;
+                    double max;
+                    double maxX;
+                    double maxY;
 
                     if (2*y + 1 ==  oldCards[0].length){
                         maxY =  oldCards[i][2*y][2*x];

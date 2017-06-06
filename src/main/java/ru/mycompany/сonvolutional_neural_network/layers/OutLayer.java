@@ -19,7 +19,6 @@ public class OutLayer extends AbstractLayer {
         ConvolutionLearningSample cls = (ConvolutionLearningSample)args;
 
         for (int i = 0 ; i < getNeurons().length ; i++){
-
         }
 
         return null ; //todo

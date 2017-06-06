@@ -24,10 +24,10 @@ public class ConvolutionLayer extends AbstractLayer {
 
         for (Neuron neuron : getNeurons()) {
             //выполнить для всех карт
-            for (int i = 0; i < arr.length; i++) {
+            for (double[][] anArr : arr) {
 
-                double[][] newCard = new double[arr[i].length][arr[i][0].length];
-                double[][] cardToPars = cardConventing(arr[i]);
+                double[][] newCard = new double[anArr.length][anArr[0].length];
+                double[][] cardToPars = cardConventing(anArr);
 
                 Link[] links = neuron.getLinks();
 
@@ -36,23 +36,23 @@ public class ConvolutionLayer extends AbstractLayer {
                     for (int x = 1; x < cardToPars[0].length - 1; x++) {
 
                         //установим значения на связи нейрона
-                        links[0].setState(cardToPars[y-1][x-1]);
-                        links[1].setState(cardToPars[y-1][x]);
-                        links[2].setState(cardToPars[y-1][x+1]);
-                        links[3].setState(cardToPars[y][x-1]);
+                        links[0].setState(cardToPars[y - 1][x - 1]);
+                        links[1].setState(cardToPars[y - 1][x]);
+                        links[2].setState(cardToPars[y - 1][x + 1]);
+                        links[3].setState(cardToPars[y][x - 1]);
                         links[4].setState(cardToPars[y][x]);
-                        links[5].setState(cardToPars[y][x+1]);
-                        links[6].setState(cardToPars[y+1][x-1]);
-                        links[7].setState(cardToPars[y+1][x]);
-                        links[8].setState(cardToPars[y+1][x+1]);
+                        links[5].setState(cardToPars[y][x + 1]);
+                        links[6].setState(cardToPars[y + 1][x - 1]);
+                        links[7].setState(cardToPars[y + 1][x]);
+                        links[8].setState(cardToPars[y + 1][x + 1]);
 
-                        newCard[y-1][x-1] = (double)neuron.getState();
+                        newCard[y - 1][x - 1] = (double) neuron.getState();
 
                     }
 
                 }
 
-                newCards[cardСounter] =  newCard;
+                newCards[cardСounter] = newCard;
                 cardСounter++;
 
             }
@@ -69,9 +69,7 @@ public class ConvolutionLayer extends AbstractLayer {
         double[][] conventedCard  = new double[card.length+2][card[0].length+2];
 
         for (int y = 0 ; y < card.length ; y++) {
-            for (int x = 0; x < card.length; x++) {
-                conventedCard[y+1][x+1] = card[y][x];
-            }
+            System.arraycopy(card[y], 0, conventedCard[y + 1], 1, card.length);
         }
 
         for (int y = 0 ; y < card.length ; y++){

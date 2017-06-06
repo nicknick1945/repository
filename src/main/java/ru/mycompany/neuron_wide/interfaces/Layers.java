@@ -54,7 +54,7 @@ public interface Layers {
      */
     Adapter doRecognize(Adapter adapter ,Sample sample);
 
-    public int getSize();
+    int getSize();
 
 
 }
