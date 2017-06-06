@@ -1,0 +1,50 @@
+package main.java.ru.mycompany.neuron_wide.AbstractImpl;
+
+import main.java.ru.mycompany.neuron_wide.exceprions.CannotRecognizeThisTypeException;
+import main.java.ru.mycompany.neuron_wide.exceprions.layerExceptions.HaveNotPreviousLayerException;
+import main.java.ru.mycompany.neuron_wide.interfaces.*;
+
+public abstract class AbstractNeuronsWide implements NeuronNetwork {
+
+    private Layers layers;              // нейронные слои
+    private int inputSize;              // размер входного векторв
+
+    @Override
+    public void doLearn(LearningSample learningSample) throws HaveNotPreviousLayerException {
+        layers.learningLevels(learningSample);
+    }
+
+    @Override
+    public Object doRecognize(Adapter adapter, Sample sample) throws HaveNotPreviousLayerException {
+        return adapter.getValue(layers.doRecognize(sample));
+    }
+
+    @Override
+    public Object doRecognize(Object sample) throws HaveNotPreviousLayerException, CannotRecognizeThisTypeException {
+
+        if ( sample instanceof Double[][]){
+            if( ( ( (Double[][])sample).length!=128)&&(( (Double[][])sample)[0].length!=128)){
+                throw new CannotRecognizeThisTypeException();
+            }
+        }
+        return layers.doRecognize(sample);
+    }
+
+/////////////////////////////геттеры сеттеры //////////////////////////////
+
+    public void setLayers(Layers layers){
+        this.layers = layers;
+    }
+
+    public Layers getLayers(){
+        return layers;
+    }
+
+    public int getInputSize() {
+        return inputSize;
+    }
+
+    public void setInputSize(int inputSize) {
+        this.inputSize = inputSize;
+    }
+}

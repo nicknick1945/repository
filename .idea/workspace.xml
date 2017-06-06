@@ -2,10 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="293d80f9-c02d-4384-b5cd-455d93f9f8de" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/mycompany/test/testNG/ConvalutionNeuronsNetworkTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/сonvolutional_neural_network/ConvolutionLink.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/сonvolutional_neural_network/ConvolutionNeuron.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/сonvolutional_neural_network/LayersContainer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ru/mycompany/UtilsTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/ConvolutionLink.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/ConvolutionNeuron.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/LayersContainer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ru/mycompany/test/EasyTest/TestMain.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ru/mycompany/test/convolution_neural_network/ImageChangeTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ru/mycompany/test/something/Implementation.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ru/mycompany/test/something/LambdaMain.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ru/mycompany/test/something/MethodSelector.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ru/mycompany/test/something/SomeClass.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ru/mycompany/test/something/SomeInterface.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/StartClass.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/StartClass.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/AbstractImpl/AbstractEnterLink.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/AbstractImpl/AbstractEnterLink.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/AbstractImpl/AbstractLayer.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/AbstractImpl/AbstractLayer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/AbstractImpl/AbstractLink.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/AbstractImpl/AbstractLink.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/AbstractImpl/AbstractNeuron.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/AbstractImpl/AbstractNeuron.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/AbstractImpl/AbstractNeuronLayers.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/AbstractImpl/AbstractNeuronLayers.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/AbstractImpl/AbstractNeuronsWide.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/AbstractImpl/AbstractNeuronsWide.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/exceprions/CannotRecognizeThisTypeException.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/exceprions/CannotRecognizeThisTypeException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/exceprions/factoryExcptions/IlligalTypeException.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/exceprions/factoryExcptions/IlligalTypeException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/exceprions/layerExceptions/HaveNotPreviousLayerException.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/exceprions/layerExceptions/HaveNotPreviousLayerException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/exceprions/layerExceptions/HoveNotNextLayerException.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/exceprions/layerExceptions/HoveNotNextLayerException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/exceprions/layersExceprions/DeleteLayerException.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/exceprions/layersExceprions/DeleteLayerException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/exceprions/layersExceprions/IllegalAddLayerArgumentException.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/exceprions/layersExceprions/IllegalAddLayerArgumentException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/exceprions/layersExceprions/IllegalDeleteLayerArgumentException.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/exceprions/layersExceprions/IllegalDeleteLayerArgumentException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/factory/LinksFactory.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/factory/LinksFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/factory/NeuronsFactory.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/factory/NeuronsFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/interfaces/Adapter.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/interfaces/Adapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/interfaces/Layers.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/interfaces/Layers.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/interfaces/LearningSample.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/interfaces/LearningSample.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/interfaces/Link.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/interfaces/Link.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/interfaces/Neuron.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/interfaces/Neuron.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/interfaces/NeuronNetwork.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/interfaces/NeuronNetwork.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/interfaces/NeuronsLayer.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/interfaces/NeuronsLayer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/interfaces/Sample.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/interfaces/Sample.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/AbstractImpl/NeuronsNetworkLearnerAbstractImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neurons_wide_learner/AbstractImpl/NeuronsNetworkLearnerAbstractImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/exceptions/HaveNotNeurnsWideExceprion.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neurons_wide_learner/exceptions/HaveNotNeurnsWideExceprion.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/exceptions/NotMatchCountNeuronsOutAndSamplOut.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neurons_wide_learner/exceptions/NotMatchCountNeuronsOutAndSamplOut.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/interfaces/NeuronsNetworkLearner.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/neurons_wide_learner/interfaces/NeuronsNetworkLearner.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/utils/ImageSizeChanger.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/utils/ImageSizeChanger.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/ConvolutionLearningSample.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/сonvolutional_neural_network/ConvolutionLearningSample.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/ConvolutionNeuralNetWork.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/сonvolutional_neural_network/ConvolutionNeuralNetWork.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/layers/ConvolutionLayer.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/сonvolutional_neural_network/layers/ConvolutionLayer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/layers/OutLayer.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/сonvolutional_neural_network/layers/OutLayer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/layers/PoolLayer.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/сonvolutional_neural_network/layers/PoolLayer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/layers/SubsamplingLayer.java" afterPath="$PROJECT_DIR$/src/main/java/ru/mycompany/сonvolutional_neural_network/layers/SubsamplingLayer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/mycompany/test/testNG/ConvalutionNeuronsNetworkTest.java" afterPath="$PROJECT_DIR$/src/test/java/ru/mycompany/ConvalutionNeuronsNetworkTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/AbstractImpl/NeuronsNetworkLearnerAbstractImpl.java" afterPath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/AbstractImpl/NeuronsNetworkLearnerAbstractImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/interfaces/NeuronsNetworkLearner.java" afterPath="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/interfaces/NeuronsNetworkLearner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/neuronswide.iml" afterPath="$PROJECT_DIR$/neuronswide.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +65,31 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/neuronswide$CreateTest.coverage" NAME="CreateTest Coverage Results" MODIFIED="1495578509992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ru.mycompany.test.convolution_neural_network.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/neuronswide$ConvalutionNeuronsNetworkTest_test1.coverage" NAME="ConvalutionNeuronsNetworkTest.test1 Coverage Results" MODIFIED="1496602089139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ru.mycompany.test.testNG.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/neuronswide$CreateTest.coverage" NAME="CreateTest Coverage Results" MODIFIED="1496778793831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>main.java.test.ru.mycompany.convolution_neural_network.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/neuronswide$ru_mycompany_test_testNG.coverage" NAME="ru.mycompany.test.testNG Coverage Results" MODIFIED="1496613855073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ru.mycompany.test.testNG.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/neuronswide$ConvalutionNeuronsNetworkTest__1_.coverage" NAME="ConvalutionNeuronsNetworkTest (1) Coverage Results" MODIFIED="1496781282198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>test.java.ru.mycompany.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/neuronswide$_default_.coverage" NAME="&lt;default&gt; Coverage Results" MODIFIED="1496781680140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/neuronswide$UtilsTest__1_.coverage" NAME="UtilsTest (1) Coverage Results" MODIFIED="1496779944825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>test.java.ru.mycompany.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/neuronswide$_home_nick_IdeaProjects_neuronswide_src_test_resources_testng_xml.coverage" NAME="$PROJECT_DIR$/src/test/resources/testng.xml Coverage Results" MODIFIED="1496781549461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/neuronswide$UtilsTest1.coverage" NAME="UtilsTest1 Coverage Results" MODIFIED="1496781748913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>main.java.ru.mycompany.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/neuronswide$ConvalutionNeuronsNetworkTest.coverage" NAME="ConvalutionNeuronsNetworkTest Coverage Results" MODIFIED="1496778278767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ru.mycompany.test.testNG.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/neuronswide$UtilsTest.coverage" NAME="UtilsTest Coverage Results" MODIFIED="1496779552886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>java.ru.mycompany.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/neuronswide$FirstTestNG_method.coverage" NAME="FirstTestNG.method Coverage Results" MODIFIED="1495989042431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ru.mycompany.test.testNG.*</FILTER>
@@ -38,34 +107,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AbstractNeuronLayers.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/AbstractImpl/AbstractNeuronLayers.java">
+      <file leaf-file-name="ConvalutionNeuronsNetworkTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/mycompany/ConvalutionNeuronsNetworkTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="146" column="13" lean-forward="false" selection-start-line="146" selection-start-column="13" selection-end-line="146" selection-end-column="13" />
-              <folding>
-                <element signature="e#3951#3952#0" expanded="true" />
-                <element signature="e#3983#3984#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FirstTestNG.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/mycompany/test/testNG/FirstTestNG.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConvalutionNeuronsNetworkTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/mycompany/test/testNG/ConvalutionNeuronsNetworkTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+            <state relative-caret-position="375">
+              <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,11 +119,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractNeuronsWide.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/AbstractImpl/AbstractNeuronsWide.java">
+      <file leaf-file-name="UtilsTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/mycompany/UtilsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+            <state relative-caret-position="122">
+              <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,72 +131,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NeuronsNetworkLearner.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/interfaces/NeuronsNetworkLearner.java">
+      <file leaf-file-name="ImageSizeChanger.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/utils/ImageSizeChanger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NeuronsNetworkLearnerAbstractImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/AbstractImpl/NeuronsNetworkLearnerAbstractImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-581">
-              <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+            <state relative-caret-position="179">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#943#944#0" expanded="true" />
-                <element signature="e#993#994#0" expanded="true" />
-                <element signature="e#2079#2080#0" expanded="true" />
-                <element signature="e#2115#2116#0" expanded="true" />
-                <element signature="e#2172#2173#0" expanded="true" />
-                <element signature="e#2219#2220#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NeuronsLayer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/interfaces/NeuronsLayer.java">
+      <file leaf-file-name="LayersContainer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/сonvolutional_neural_network/LayersContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+            <state relative-caret-position="75">
+              <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HaveNotNeurnsWideExceprion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/exceptions/HaveNotNeurnsWideExceprion.java">
+      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-              <folding>
-                <element signature="e#218#219#0" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NotMatchCountNeuronsOutAndSamplOut.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/exceptions/NotMatchCountNeuronsOutAndSamplOut.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="60" lean-forward="true" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+            <state relative-caret-position="255">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LearningSample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/interfaces/LearningSample.java">
+      <file leaf-file-name="StartClass.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/StartClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="neuronswide.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/neuronswide.iml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <caret line="6" column="71" lean-forward="false" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -164,6 +191,7 @@
         <option value="Kotlin File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -194,17 +222,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ru/mycompany/test/something/SomeClass.java" />
-        <option value="$PROJECT_DIR$/src/ru/mycompany/test/something/LambdaMain.java" />
-        <option value="$PROJECT_DIR$/src/ru/mycompany/test/something/Implementation.java" />
-        <option value="$PROJECT_DIR$/src/ru/mycompany/test/something/SomeInterface.java" />
-        <option value="$PROJECT_DIR$/src/ru/mycompany/test/something/MethodSelector.java" />
-        <option value="$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/ConvalutionLink.java" />
-        <option value="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/AbstractImpl/AbstractEnterLink.java" />
-        <option value="$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/ConvolutionLayers.java" />
-        <option value="$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/ConvalutionNeuron.java" />
-        <option value="$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/layers/DropOutLayer.java" />
-        <option value="$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/layers/EnterLayer.java" />
         <option value="$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/layers/ConvolutionLayers.java" />
         <option value="$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/ConvolutionLink.java" />
         <option value="$PROJECT_DIR$/src/ru/mycompany/test/EasyTest/TestMain.java" />
@@ -237,7 +254,6 @@
         <option value="$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/layers/PoolLayer.java" />
         <option value="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/interfaces/Layers.java" />
         <option value="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/AbstractImpl/AbstractNeuronLayers.java" />
-        <option value="$PROJECT_DIR$/src/ru/mycompany/test/testNG/ConvalutionNeuronsNetworkTest.java" />
         <option value="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/interfaces/NeuurnsNetworkLearner.java" />
         <option value="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/HaveNotNeurnsWideExceprion.java" />
         <option value="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/exceptions/HaveNotNeurnsWideExceprion.java" />
@@ -245,6 +261,18 @@
         <option value="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/interfaces/NeuronsNetworkLearner.java" />
         <option value="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/interfaces/NeuronsLayer.java" />
         <option value="$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/AbstractImpl/NeuronsNetworkLearnerAbstractImpl.java" />
+        <option value="$PROJECT_DIR$/src/ru/mycompany/test/testNG/UtilsTest.java" />
+        <option value="$PROJECT_DIR$/src/ru/mycompany/test/testNG/ConvalutionNeuronsNetworkTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/UtilsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test/convolution_neural_network/CreateTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/ru/mycompany/StartClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ConvalutionNeuronsNetworkTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/UtilsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mycompany/StartClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/mycompany/ConvalutionNeuronsNetworkTest.java" />
+        <option value="$PROJECT_DIR$/neuronswide.iml" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/mycompany/UtilsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/testng.xml" />
       </list>
     </option>
   </component>
@@ -305,19 +333,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mycompany" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="testNG" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -335,19 +355,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ru" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mycompany" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="something" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -362,100 +382,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mycompany" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neuronswide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neuronswide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mycompany" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EasyTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neuronswide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neuronswide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mycompany" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="convolution_neural_network" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neuronswide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neuronswide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mycompany" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -477,6 +403,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ru" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -484,8 +418,34 @@
               <option name="myItemId" value="mycompany" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neuronswide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neuronswide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ru" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycompany" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -507,37 +467,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mycompany" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="сonvolutional_neural_network" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neuronswide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neuronswide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -546,10 +480,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mycompany" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -571,19 +501,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ru" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mycompany" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neuronswide" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -609,6 +539,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ru" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -617,15 +555,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neuronswide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="neurons_wide_learner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exceptions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -643,19 +577,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ru" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mycompany" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neuronswide" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -681,6 +615,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ru" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -689,11 +631,247 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="neuron_wide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neuronswide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neuronswide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ru" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycompany" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neuron_wide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="factory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="neuronswide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neuronswide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ru" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycompany" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neuron_wide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exceprions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neuronswide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neuronswide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ru" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycompany" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neuron_wide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exceprions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layersExceprions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neuronswide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neuronswide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ru" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycompany" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neuron_wide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exceprions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layerExceptions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neuronswide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neuronswide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ru" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycompany" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neuron_wide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exceprions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="factoryExcptions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neuronswide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neuronswide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ru" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycompany" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neuron_wide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AbstractImpl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -704,14 +882,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Groovy JUnit" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Загрузки/testng-6.11.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.testRunning" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/ru/mycompany/test/testNG" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -743,44 +922,31 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ConvalutionNeuronsNetworkTest.test1">
-    <configuration default="false" name="FirstTestNG.method" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.UtilsTest1">
+    <configuration default="false" name="CreateTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="ru.mycompany.test.testNG.*" />
+          <option name="PATTERN" value="main.java.test.ru.mycompany.convolution_neural_network.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="neuronswide" />
+      <option name="MAIN_CLASS_NAME" value="main.java.test.ru.mycompany.convolution_neural_network.CreateTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="ru.mycompany.test.testNG" />
-      <option name="MAIN_CLASS_NAME" value="ru.mycompany.test.testNG.FirstTestNG" />
-      <option name="METHOD_NAME" value="method" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
+      <module name="neuronswide" />
       <envs />
-      <properties />
-      <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="FirstTestNG" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ConvalutionNeuronsNetworkTest (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="ru.mycompany.test.testNG.*" />
+          <option name="PATTERN" value="test.java.ru.mycompany.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -788,8 +954,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="ru.mycompany.test.testNG" />
-      <option name="MAIN_CLASS_NAME" value="ru.mycompany.test.testNG.FirstTestNG" />
+      <option name="PACKAGE_NAME" value="test.java.ru.mycompany" />
+      <option name="MAIN_CLASS_NAME" value="test.java.ru.mycompany.ConvalutionNeuronsNetworkTest" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -810,26 +976,30 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="FirstTestNG.parameterIntTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="UtilsTest1" type="TestNG" factoryName="TestNG" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="ru.mycompany.test.testNG.*" />
+          <option name="PATTERN" value="test.java.ru.mycompany.*" />
+          <option name="ENABLED" value="false" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="main.java.ru.mycompany.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="neuronswide" />
+      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="ru.mycompany.test.testNG" />
-      <option name="MAIN_CLASS_NAME" value="ru.mycompany.test.testNG.FirstTestNG" />
-      <option name="METHOD_NAME" value="parameterIntTest" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
       <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -837,32 +1007,27 @@
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
+      <option name="PROPERTIES_FILE" value="" />
       <envs />
       <properties />
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="FirstTestNG.myParamsTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ru.mycompany.test.testNG.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="false" name="&lt;default&gt;" type="TestNG" factoryName="TestNG" singleton="true" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="neuronswide" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="ru.mycompany.test.testNG" />
-      <option name="MAIN_CLASS_NAME" value="ru.mycompany.test.testNG.FirstTestNG" />
-      <option name="METHOD_NAME" value="myParamsTest" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
       <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -870,40 +1035,7 @@
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="false" name="ConvalutionNeuronsNetworkTest.test1" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ru.mycompany.test.testNG.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="neuronswide" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="ru.mycompany.test.testNG" />
-      <option name="MAIN_CLASS_NAME" value="ru.mycompany.test.testNG.ConvalutionNeuronsNetworkTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
+      <option name="PROPERTIES_FILE" value="" />
       <envs />
       <properties />
       <listeners />
@@ -1093,20 +1225,17 @@
       <listeners />
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.FirstTestNG.method" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.FirstTestNG" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.FirstTestNG.parameterIntTest" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.FirstTestNG.myParamsTest" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.ConvalutionNeuronsNetworkTest.test1" />
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Application.CreateTest" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.ConvalutionNeuronsNetworkTest (1)" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.UtilsTest1" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.&lt;default&gt;" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.ConvalutionNeuronsNetworkTest.test1" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.FirstTestNG.myParamsTest" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.FirstTestNG.parameterIntTest" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.FirstTestNG.method" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.FirstTestNG" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="TestNG.UtilsTest1" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.&lt;default&gt;" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.ConvalutionNeuronsNetworkTest (1)" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1190,39 +1319,46 @@
       <option name="project" value="LOCAL" />
       <updated>1496607766095</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Добавлены методы в абстрактный обучающий класс , добавлен тестовый метод&#10;для тестиирования правильности работы сверточных слоев">
+      <created>1496613102428</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1496613102428</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConvalutionNeuronsNetworkTest_test1 - 2017.06.04 at 21h 44m 50s.xml">
-      <configuration name="ConvalutionNeuronsNetworkTest.test1" configurationId="TestNG" />
+    <history-entry file="ConvalutionNeuronsNetworkTest_(1) - 2017.06.06 at 23h 34m 44s.xml">
+      <configuration name="ConvalutionNeuronsNetworkTest (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ConvalutionNeuronsNetworkTest_test1 - 2017.06.04 at 21h 46m 08s.xml">
-      <configuration name="ConvalutionNeuronsNetworkTest.test1" configurationId="TestNG" />
+    <history-entry file="ConvalutionNeuronsNetworkTest_(1) - 2017.06.06 at 23h 37m 21s.xml">
+      <configuration name="ConvalutionNeuronsNetworkTest (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ConvalutionNeuronsNetworkTest_test1 - 2017.06.04 at 21h 47m 06s.xml">
-      <configuration name="ConvalutionNeuronsNetworkTest.test1" configurationId="TestNG" />
+    <history-entry file="UtilsTest1 - 2017.06.06 at 23h 38m 31s.xml">
+      <configuration name="UtilsTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ConvalutionNeuronsNetworkTest_test1 - 2017.06.04 at 21h 48m 10s.xml">
-      <configuration name="ConvalutionNeuronsNetworkTest.test1" configurationId="TestNG" />
+    <history-entry file="UtilsTest1 - 2017.06.06 at 23h 39m 44s.xml">
+      <configuration name="UtilsTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FirstTestNG_method - 2017.05.28 at 19h 30m 44s.xml">
-      <configuration name="FirstTestNG.method" configurationId="TestNG" />
+    <history-entry file="UtilsTest1 - 2017.06.06 at 23h 41m 09s.xml">
+      <configuration name="UtilsTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FirstTestNG_myParamsTest - 2017.05.28 at 20h 11m 10s.xml">
-      <configuration name="FirstTestNG.myParamsTest" configurationId="TestNG" />
+    <history-entry file="UtilsTest1 - 2017.06.06 at 23h 42m 31s.xml">
+      <configuration name="UtilsTest1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FirstTestNG_myParamsTest - 2017.05.28 at 20h 12m 28s.xml">
-      <configuration name="FirstTestNG.myParamsTest" configurationId="TestNG" />
+    <history-entry file="_default_ - 2017.06.06 at 23h 41m 23s.xml">
+      <configuration name="&lt;default&gt;" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FirstTestNG_myParamsTest - 2017.05.28 at 20h 17m 05s.xml">
-      <configuration name="FirstTestNG.myParamsTest" configurationId="TestNG" />
+    <history-entry file="_home_nick_IdeaProjects_neuronswide_src_test_resources_testng_xml - 2017.06.06 at 23h 33m 39s.xml">
+      <configuration name="/home/nick/IdeaProjects/neuronswide/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FirstTestNG_myParamsTest - 2017.05.28 at 20h 17m 20s.xml">
-      <configuration name="FirstTestNG.myParamsTest" configurationId="TestNG" />
+    <history-entry file="_home_nick_IdeaProjects_neuronswide_src_test_resources_testng_xml - 2017.06.06 at 23h 36m 22s.xml">
+      <configuration name="/home/nick/IdeaProjects/neuronswide/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FirstTestNG_parameterIntTest - 2017.05.28 at 19h 45m 14s.xml">
-      <configuration name="FirstTestNG.parameterIntTest" configurationId="TestNG" />
+    <history-entry file="_home_nick_IdeaProjects_neuronswide_src_test_resources_testng_xml - 2017.06.06 at 23h 39m 12s.xml">
+      <configuration name="/home/nick/IdeaProjects/neuronswide/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -1250,13 +1386,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5435898" sideWeight="0.5045386" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43719414" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44861338" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2590909" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.365416" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49848485" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21538462" sideWeight="0.49546143" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35530302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26666668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1353,7 +1489,8 @@
     <MESSAGE value="удален класс на котлин из прокта за ненадобностью , поправлено возвращаемое функцией активации нецрона значение на Object" />
     <MESSAGE value="построена сверточная нейросеть , пока без обучения" />
     <MESSAGE value="Добавлены интерфейсы для класса обучения нейросети&#10;добавлена абстрактная реализация этого класса (методы пока не реализованны)&#10;прописанны несколько типов исключений" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены интерфейсы для класса обучения нейросети&#10;добавлена абстрактная реализация этого класса (методы пока не реализованны)&#10;прописанны несколько типов исключений" />
+    <MESSAGE value="Добавлены методы в абстрактный обучающий класс , добавлен тестовый метод&#10;для тестиирования правильности работы сверточных слоев" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены методы в абстрактный обучающий класс , добавлен тестовый метод&#10;для тестиирования правильности работы сверточных слоев" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1369,48 +1506,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/factory/NeuronsFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/factory/LinksFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/layers/EnterLayer.java" />
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/awt/Graphics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6829">
-          <caret line="1233" column="40" lean-forward="false" selection-start-line="1233" selection-start-column="40" selection-end-line="1233" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/utils/ImageSizeChanger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-251">
-          <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/StartClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/AbstractImpl/AbstractNeuron.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/AbstractImpl/AbstractNeuron.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
@@ -1418,10 +1514,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/interfaces/Link.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/interfaces/Link.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1429,14 +1526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neuronswide.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1487,7 +1576,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/ConvolutionNeuralNetWork.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/сonvolutional_neural_network/ConvolutionNeuralNetWork.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
@@ -1495,7 +1584,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/layers/OutLayer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/сonvolutional_neural_network/layers/OutLayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
@@ -1503,67 +1592,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/layers/ConvolutionLayer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/сonvolutional_neural_network/layers/ConvolutionLayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-775">
           <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#389#390#0" expanded="false" />
-            <element signature="e#422#423#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/layers/SubsamplingLayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="36" column="37" lean-forward="false" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-          <folding>
-            <element signature="e#1622#1623#0" expanded="false" />
-            <element signature="e#1656#1657#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/LayersContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/ConvolutionNeuron.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/test/something/Implementation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/сonvolutional_neural_network/layers/SubsamplingLayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="e#159#160#0" expanded="false" />
-            <element signature="e#220#221#0" expanded="false" />
-            <element signature="e#263#264#0" expanded="false" />
-            <element signature="e#324#325#0" expanded="false" />
-            <element signature="e#367#368#0" expanded="false" />
-            <element signature="e#428#429#0" expanded="false" />
-            <element signature="e#471#472#0" expanded="false" />
-            <element signature="e#532#533#0" expanded="false" />
-            <element signature="e#579#580#0" expanded="false" />
-            <element signature="e#642#643#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="184">
+          <caret line="36" column="37" lean-forward="false" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/ConvolutionLink.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/something/Implementation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/сonvolutional_neural_network/ConvolutionLink.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
@@ -1571,47 +1624,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/layers/PoolLayer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/сonvolutional_neural_network/layers/PoolLayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding>
-            <element signature="e#880#881#0" expanded="false" />
-            <element signature="e#914#915#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/test/EasyTest/TestMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/test/convolution_neural_network/ImageChangeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/test/convolution_neural_network/CreateTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="42" column="66" lean-forward="false" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/сonvolutional_neural_network/ConvolutionLearningSample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1632,7 +1648,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/exceprions/CannotRecognizeThisTypeException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/exceprions/CannotRecognizeThisTypeException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -1640,18 +1656,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/exceprions/layersExceprions/IllegalDeleteLayerArgumentException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/exceprions/layersExceprions/IllegalDeleteLayerArgumentException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#303#304#0" expanded="false" />
-            <element signature="e#376#377#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/exceprions/layersExceprions/IllegalAddLayerArgumentException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/exceprions/layersExceprions/IllegalAddLayerArgumentException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
@@ -1659,7 +1672,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/interfaces/NeuronNetwork.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/interfaces/NeuronNetwork.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
@@ -1667,7 +1680,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/interfaces/Neuron.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/interfaces/Neuron.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
@@ -1675,7 +1688,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/interfaces/Layers.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/interfaces/Layers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
           <caret line="56" column="25" lean-forward="false" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
@@ -1683,7 +1696,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/interfaces/Adapter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/interfaces/Adapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
@@ -1691,7 +1704,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/AbstractImpl/AbstractEnterLink.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/AbstractImpl/AbstractEnterLink.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
@@ -1699,49 +1712,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/AbstractImpl/AbstractLayer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/AbstractImpl/AbstractLayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding>
-            <element signature="method#getNextLayer#0;class#AbstractLayer#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/AbstractImpl/AbstractLink.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/AbstractImpl/AbstractLink.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-          <folding>
-            <element signature="e#694#695#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/AbstractImpl/AbstractNeuronLayers.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/AbstractImpl/AbstractNeuronLayers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="146" column="13" lean-forward="false" selection-start-line="146" selection-start-column="13" selection-end-line="146" selection-end-column="13" />
-          <folding>
-            <element signature="e#3951#3952#0" expanded="true" />
-            <element signature="e#3983#3984#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/AbstractImpl/AbstractNeuronsWide.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/AbstractImpl/AbstractNeuronsWide.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/interfaces/LearningSample.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/interfaces/LearningSample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
@@ -1749,26 +1752,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/exceptions/NotMatchCountNeuronsOutAndSamplOut.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/neurons_wide_learner/exceptions/NotMatchCountNeuronsOutAndSamplOut.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="60" lean-forward="true" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+          <caret line="10" column="60" lean-forward="false" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/exceptions/HaveNotNeurnsWideExceprion.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/neurons_wide_learner/exceptions/HaveNotNeurnsWideExceprion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="e#218#219#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-          </folding>
+          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neuron_wide/interfaces/NeuronsLayer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/neuron_wide/interfaces/NeuronsLayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
@@ -1776,45 +1776,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/test/testNG/FirstTestNG.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/neurons_wide_learner/AbstractImpl/NeuronsNetworkLearnerAbstractImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+        <state relative-caret-position="-581">
+          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/test/testNG/ConvalutionNeuronsNetworkTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/AbstractImpl/NeuronsNetworkLearnerAbstractImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-581">
-          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
-            <element signature="e#993#994#0" expanded="true" />
-            <element signature="e#2079#2080#0" expanded="true" />
-            <element signature="e#2115#2116#0" expanded="true" />
-            <element signature="e#2172#2173#0" expanded="true" />
-            <element signature="e#2219#2220#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/main/neuronswide/neurons_wide_learner/interfaces/NeuronsNetworkLearner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/neurons_wide_learner/interfaces/NeuronsNetworkLearner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/test/EasyTest/TestMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/mycompany/test/testNG/FirstTestNG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="55" column="31" lean-forward="true" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/something/SomeClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/something/LambdaMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/сonvolutional_neural_network/ConvolutionLearningSample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/сonvolutional_neural_network/ConvolutionNeuron.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/ru/mycompany/convolution_neural_network/CreateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="42" column="66" lean-forward="false" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/ru/mycompany/convolution_neural_network/ImageChangeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/StartClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neuronswide.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="71" lean-forward="false" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/utils/ImageSizeChanger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mycompany/сonvolutional_neural_network/LayersContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/mycompany/UtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/mycompany/ConvalutionNeuronsNetworkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1875,6 +1975,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
