@@ -66,7 +66,7 @@ public class ConvalutionNeuronsNetworkTest {
 
     @Test(description = "Проверка работы слоев вертки (на кождом наборе слоев " +
             ", размер карт должен уменьшаться в двое,наборы состоят из 3-х слоев)")
-    public void test1() throws Exception {
+    public void convolutionsTest() throws Exception {
 
 
         double[][][] resultArray  = (double[][][])cnn.doRecognize(enterArr);

@@ -8,9 +8,14 @@
                     <include name="scaleImageTest"/>
                 </methods>
             </class>
+
+        </classes>
+    </test>
+    <test name="тестирование функций сверточной нейросети">
+        <classes>
             <class name="test.java.ru.mycompany.ConvalutionNeuronsNetworkTest">
                 <methods>
-                    <include name="createNetWork" description="тест на правильное создане сети и правиную свертку"/>
+                    <include name="convolutionsTest" description="тест на правильное создане сети и правиную свертку"/>
                 </methods>
             </class>
         </classes>
