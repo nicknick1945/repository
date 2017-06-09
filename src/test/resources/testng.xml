@@ -21,4 +21,15 @@
         </classes>
     </test>
 
+    <test name="тестирование работы синхронной работы потоков">
+        <classes>
+            <class name="test.java.ru.mycompany.ThreadPoolTest">
+                <methods>
+                    <include name="threadPoolTest"/>
+                    <include name="errorsTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
 </suite>
