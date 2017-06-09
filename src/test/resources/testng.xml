@@ -25,7 +25,8 @@
         <classes>
             <class name="test.java.ru.mycompany.ThreadPoolTest">
                 <methods>
-                    <include name="threadPoolTest"/>
+                    <include name="timeMultyThreadsMyRealization"/>
+                    <include name="timeMultyThreadsConcarrancy"/>
                     <include name="errorsTest"/>
                 </methods>
             </class>

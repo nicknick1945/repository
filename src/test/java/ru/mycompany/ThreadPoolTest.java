@@ -37,9 +37,9 @@ public class ThreadPoolTest {
     }
 
     @Test
-    public void timeMultyThreadsTest5() {
-        ThreadsPool threadsPool = new ThreadsPool();
+    public void timeMultyThreadsMyRealization() {
         try {
+            ThreadsPool threadsPool = new ThreadsPool();
             tasks = new Stack<>();
             for (int i = 0; i < 1000; i++) {
                 tasks.push(new TestTask());
@@ -64,10 +64,7 @@ public class ThreadPoolTest {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-
-
     }
-
 
     @Test(description = "тестирование правильного выброса исключений")
     public void errorsTest() {
