@@ -1,41 +1,36 @@
-package main.java.ru.mycompany.mutlithreading;
+package main.java.ru.mycompany.mutlithreading.myRealization;
 
-import main.java.ru.mycompany.mutlithreading.interfaces.Task;
+import main.java.ru.mycompany.mutlithreading.myRealization.interfaces.Task;
 
 /**
  * Created by nick on 07.06.17.
  */
 
-/** Управляет вызовом
+/**
+ * Управляет вызовом
  * выполнения задач
+ *
  * @see Task
  * представляет собой поток в котором у задачи будет вызван метод action()
- * */
-public class Handler extends Thread{
+ */
+public class Handler extends Thread {
 
     private Task task;                  //Задача
     private ThreadsPool threadsPool;    //ссылка на пул потоков
 
-    public void setTask(Task task){
+    public void setTask(Task task) {
         this.task = task;
     }
 
     @Override
-    public void run(){
-
-        try {
+    public void run() {
             action(task);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
         threadsPool.addHandler(this);
     }
 
-    protected void action(Task task) throws InterruptedException {
+    protected void action(Task task) {
         task.action();
     }
-
 
     public void setThreadPool(ThreadsPool threadsPool) {
         this.threadsPool = threadsPool;

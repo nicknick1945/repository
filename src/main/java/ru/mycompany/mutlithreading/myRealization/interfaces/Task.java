@@ -1,4 +1,4 @@
-package main.java.ru.mycompany.mutlithreading.interfaces;
+package main.java.ru.mycompany.mutlithreading.myRealization.interfaces;
 
 /**
  * @create by nick on 07.06.17.
@@ -10,5 +10,5 @@ package main.java.ru.mycompany.mutlithreading.interfaces;
 public interface Task {
 
     /** действие которое будет выполнено в отдельном потоке*/
-    void action() throws InterruptedException;
+    void action();
 }

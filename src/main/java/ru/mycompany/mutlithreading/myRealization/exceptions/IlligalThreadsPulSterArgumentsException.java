@@ -1,4 +1,4 @@
-package main.java.ru.mycompany.mutlithreading.exceptions;
+package main.java.ru.mycompany.mutlithreading.myRealization.exceptions;
 
 /**
  * Created by nick on 09.06.17.

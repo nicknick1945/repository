@@ -1,15 +1,17 @@
-package main.java.ru.mycompany.mutlithreading;
+package main.java.ru.mycompany.mutlithreading.myRealization;
 
-import main.java.ru.mycompany.mutlithreading.exceptions.IlligalThreadsPulSterArgumentsException;
-import main.java.ru.mycompany.mutlithreading.interfaces.Task;
+import main.java.ru.mycompany.mutlithreading.myRealization.exceptions.IlligalThreadsPulSterArgumentsException;
+import main.java.ru.mycompany.mutlithreading.myRealization.interfaces.Task;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
+import static java.lang.Thread.sleep;
+
 /**
  * Created by nick on 07.06.17.
- *
+ * <p>
  * Класс выполняющий переданные задачи в заданном колличестве потоков
  */
 public class ThreadsPool {
@@ -20,11 +22,7 @@ public class ThreadsPool {
 
     public void start(Stack<Task> tasks, int countThread) throws Exception {
         this.tasks = tasks;
-        try {
-            handlers = createHandlers(countThread);
-        }catch (Exception e){
-            throw e;
-        }
+        handlers = createHandlers(countThread);
 
         int countHandlers = handlers.size();
         for (int i = 0; i < countHandlers; i++) {
@@ -33,7 +31,7 @@ public class ThreadsPool {
         }
 
         while (!localFinish()) {
-            Thread.currentThread().sleep(1000);
+            sleep(1000);
         }
 
     }
@@ -43,8 +41,8 @@ public class ThreadsPool {
 
         if (!tasks.empty()) {
             handler.setTask(tasks.pop());
-            handler.setThreadPool(this);
             if (!handler.isAlive()) {
+                handler.setThreadPool(this);
                 handler.start();
             } else {
                 handler.run();
@@ -67,11 +65,11 @@ public class ThreadsPool {
             }
             return createdHandlers;
 
-        }else if (tasks == null && countHandlers >= 1){
+        } else if (tasks == null && countHandlers >= 1) {
             throw new IlligalThreadsPulSterArgumentsException("не переданы задачи");
-        }else if (tasks != null && countHandlers <1 ){
+        } else if (tasks != null && countHandlers < 1) {
             throw new IlligalThreadsPulSterArgumentsException("события не могут быть выполнены клолличестве потоков <1");
-        }else  {
+        } else {
             throw new IlligalThreadsPulSterArgumentsException("не переданы задачи + \n " +
                     "события не могут быть выполнены клолличестве потоков <1");
         }
