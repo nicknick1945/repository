@@ -9,9 +9,7 @@ import java.util.Stack;
 
 /**
  * Created by nick on 07.06.17.
- */
-
-/**
+ *
  * Класс выполняющий переданные задачи в заданном колличестве потоков
  */
 public class ThreadsPool {
@@ -41,6 +39,7 @@ public class ThreadsPool {
     }
 
     void addHandler(Handler handler) {
+
 
         if (!tasks.empty()) {
             handler.setTask(tasks.pop());
