@@ -6,16 +6,16 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-
-/**/
+/* Класс который который имеет функции для изменения размера фотографий */
 public class ImageSizeChanger {
 
+    private final int WIDTH = 128;  //размеры на которые меняем размер картинки
+    private final int HEIGHT = 128; //размеры на которые меняем размер картинки
 
     public  Image changeImageSize(String path) throws IOException {
         BufferedImage originalImage = ImageIO.read(new File(path));
-        return resizeImage(originalImage,128,128);
+        return resizeImage(originalImage, WIDTH, HEIGHT);
     }
-
 
     /** Функция создает новое изображение с требуемыми размерами на основе исходного
      * @param image исходное изображение
@@ -34,13 +34,10 @@ public class ImageSizeChanger {
         return bufferedImage;
     }
 
-
-
-    /**
-     * Функция менет размер всех ихзоражений из папки до 128*128 с сохранением отношений сторон
-     * @param directoryPath
-     * И сохраняет полученные изображения в папку
-     * @param targetDirectory
+    /*
+     * @param directoryPath Функция менет размер всех ихзоражений из папки до 128*128 с сохранением отношений сторон
+     *
+     * @param targetDirectory И сохраняет полученные изображения в папку
      * */
     public void changeAllPhotoInDirectory(String directoryPath,String targetDirectory)  {
          File directory = new File(directoryPath);

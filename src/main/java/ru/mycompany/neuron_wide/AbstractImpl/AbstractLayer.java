@@ -1,8 +1,8 @@
 package main.java.ru.mycompany.neuron_wide.AbstractImpl;
 
 
-import main.java.ru.mycompany.neuron_wide.exceprions.layerExceptions.HoveNotNextLayerException;
 import main.java.ru.mycompany.neuron_wide.exceprions.layerExceptions.HaveNotPreviousLayerException;
+import main.java.ru.mycompany.neuron_wide.exceprions.layerExceptions.HoveNotNextLayerException;
 import main.java.ru.mycompany.neuron_wide.interfaces.Neuron;
 import main.java.ru.mycompany.neuron_wide.interfaces.NeuronsLayer;
 
@@ -79,7 +79,8 @@ public abstract class AbstractLayer implements NeuronsLayer {
         this.nextLayer = neuronsLayer ;
     }
 
-    @Override    public Neuron[] getNeurons() {
+    @Override
+    public Neuron[] getNeurons() {
         return neurons;
     }
 
