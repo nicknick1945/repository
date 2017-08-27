@@ -14,6 +14,7 @@ public class NeuronsFactory {
      * @throws Exception ну пока не будем запариваться пусть будет так на ui выведем
      *  getMessage () (
      *  он переопределен для каждого из исключений , которые генерятся )
+     *  todo сделать гибкие созданиесвязей для нейронов , тут нужен builder а не factory
      */
     public static Neuron[] createNeurons(int countNeurons,Class neuronsImplClass) throws Exception {
 
@@ -26,7 +27,6 @@ public class NeuronsFactory {
                 throw new IlligalTypeException();
             }
         }
-
         return neurons;
     }
 }

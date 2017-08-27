@@ -6,6 +6,8 @@ import main.java.ru.mycompany.neuron_wide.interfaces.*;
 
 public abstract class AbstractNeuronsWide implements NeuronNetwork {
 
+    private static final int IMAGE_LENGTH = 128;
+    private static final int IMAGE_HEIGHT = 188;
     private Layers layers;              // нейронные слои
     private int inputSize;              // размер входного векторв
 
@@ -23,9 +25,11 @@ public abstract class AbstractNeuronsWide implements NeuronNetwork {
     public Object doRecognize(Object sample) throws HaveNotPreviousLayerException, CannotRecognizeThisTypeException {
 
         if ( sample instanceof Double[][]){
-            if( ( ( (Double[][])sample).length!=128)&&(( (Double[][])sample)[0].length!=128)){
+            if ((((Double[][]) sample).length != IMAGE_HEIGHT) && (((Double[][]) sample)[0].length != IMAGE_LENGTH)) {
                 throw new CannotRecognizeThisTypeException();
             }
+        } else {
+            throw new RuntimeException("не верный тип данных передан на вход нейронной сети");
         }
         return layers.doRecognize(sample);
     }
