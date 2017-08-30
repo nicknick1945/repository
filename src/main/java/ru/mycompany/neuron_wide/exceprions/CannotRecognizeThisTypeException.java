@@ -7,6 +7,6 @@ public class CannotRecognizeThisTypeException extends Exception {
 
     @Override
     public String getMessage() {
-        return "object to recognize must be 'double[][]'";
+        return "object to recognize must be 'double[][][] with size [*][128][128]'";
     }
 }

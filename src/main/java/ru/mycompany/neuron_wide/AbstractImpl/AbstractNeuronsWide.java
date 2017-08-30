@@ -24,8 +24,8 @@ public abstract class AbstractNeuronsWide implements NeuronNetwork {
     @Override
     public Object doRecognize(Object sample) throws HaveNotPreviousLayerException, CannotRecognizeThisTypeException {
 
-        if ( sample instanceof Double[][]){
-            if ((((Double[][]) sample).length != IMAGE_HEIGHT) && (((Double[][]) sample)[0].length != IMAGE_LENGTH)) {
+        if (sample instanceof Double[][][]) {
+            if ((((Double[][][]) sample)[0].length != IMAGE_HEIGHT) && (((Double[][][]) sample)[0][0].length != IMAGE_LENGTH)) {
                 throw new CannotRecognizeThisTypeException();
             }
         } else {

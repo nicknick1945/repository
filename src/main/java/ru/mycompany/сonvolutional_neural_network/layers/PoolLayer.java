@@ -8,8 +8,8 @@ public class PoolLayer extends AbstractLayer {
     @Override
     protected Object recognizeFunction(Object object) {
 
-        double[][][] oldCards = (double[][][])object;
-        double[][][] newCards = new double[oldCards.length/2 + oldCards.length%2 ][][];
+        Double[][][] oldCards = (Double[][][]) object;
+        Double[][][] newCards = new Double[oldCards.length / 2 + oldCards.length % 2][][];
 
         for (int i = 0 ; i<newCards.length ; i++){
 
@@ -30,9 +30,9 @@ public class PoolLayer extends AbstractLayer {
     }
 
     //свертка вдух карт в одну методом выбором максимального из элементов двух соседних карт
-    private double[][] convalutions(double[][] card1,double[][] card2){
+    private Double[][] convalutions(Double[][] card1, Double[][] card2) {
 
-        double[][] newCard = new double[card1.length][card1[0].length];
+        Double[][] newCard = new Double[card1.length][card1[0].length];
 
         for(int i= 0 ;i < newCard.length ; i++){
 

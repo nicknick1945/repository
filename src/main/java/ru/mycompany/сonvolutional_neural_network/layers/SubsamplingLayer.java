@@ -10,10 +10,10 @@ public class SubsamplingLayer extends AbstractLayer{
     @Override
     protected Object recognizeFunction(Object object) {
 
-        double[][][] oldCards = (double[][][])object;
+        Double[][][] oldCards = (Double[][][]) object;
         int height =  oldCards[0].length/2 + oldCards[0].length%2 ;
         int widht = oldCards[0][0].length/2 + oldCards[0][0].length%2 ;
-        double[][][] newCards = new double[oldCards.length][height][widht];
+        Double[][][] newCards = new Double[oldCards.length][height][widht];
 
         for(int i = 0 ; i < oldCards.length ; i++ ){
 
@@ -21,9 +21,9 @@ public class SubsamplingLayer extends AbstractLayer{
 
                 for( int x = 0 ; x < newCards[0][0].length ; x++ ){
 
-                    double max;
-                    double maxX;
-                    double maxY;
+                    Double max;
+                    Double maxX;
+                    Double maxY;
 
                     if (2*y + 1 ==  oldCards[0].length){
                         maxY =  oldCards[i][2*y][2*x];

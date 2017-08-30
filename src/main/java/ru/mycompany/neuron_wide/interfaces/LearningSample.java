@@ -15,7 +15,7 @@ public interface LearningSample {
      */
     Object getOut();
 
-    void setInput(double[][] input);
+    void setInput(Double[][] input);
 
-    void setOut(double[] out);
+    void setOut(Double[] out);
 }

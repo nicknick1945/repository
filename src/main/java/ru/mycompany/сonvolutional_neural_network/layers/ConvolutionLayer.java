@@ -1,7 +1,6 @@
 package main.java.ru.mycompany.сonvolutional_neural_network.layers;
 
 import main.java.ru.mycompany.neuron_wide.AbstractImpl.AbstractLayer;
-
 import main.java.ru.mycompany.neuron_wide.interfaces.Link;
 import main.java.ru.mycompany.neuron_wide.interfaces.Neuron;
 
@@ -16,18 +15,18 @@ public class ConvolutionLayer extends AbstractLayer {
     //напомню , что трехмерный массив , потому , что тут может быть много двумерных карт признаков
     @Override
     protected Object recognizeFunction(Object object) {
-        double[][][] arr  = (double[][][]) object;      // массив карт с предыдущего слоя
+        Double[][][] arr = (Double[][][]) object;      // массив карт с предыдущего слоя
         int countNewCards = getNeurons().length*arr.length;     //количество карт , которое планирутся получить
-        double[][][] newCards = new double[ countNewCards ][ arr[0].length ][ arr[0][0].length ];
+        Double[][][] newCards = new Double[countNewCards][arr[0].length][arr[0][0].length];
         int cardСounter = 0;// порядковый номер вставляемой карты
 
 
         for (Neuron neuron : getNeurons()) {
             //выполнить для всех карт
-            for (double[][] anArr : arr) {
+            for (Double[][] anArr : arr) {
 
-                double[][] newCard = new double[anArr.length][anArr[0].length];
-                double[][] cardToPars = cardConventing(anArr);
+                Double[][] newCard = new Double[anArr.length][anArr[0].length];
+                Double[][] cardToPars = cardConventing(anArr);
 
                 Link[] links = neuron.getLinks();
 
@@ -64,9 +63,9 @@ public class ConvolutionLayer extends AbstractLayer {
     }
 
     /*этот метод преобразует карту , в карту большего размера для избежания краевых эффектов*/
-    private double[][] cardConventing(double[][] card){
+    private Double[][] cardConventing(Double[][] card) {
 
-        double[][] conventedCard  = new double[card.length+2][card[0].length+2];
+        Double[][] conventedCard = new Double[card.length + 2][card[0].length + 2];
 
         for (int y = 0 ; y < card.length ; y++) {
             System.arraycopy(card[y], 0, conventedCard[y + 1], 1, card.length);

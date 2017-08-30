@@ -1,4 +1,4 @@
-package test.java.ru.mycompany;
+package test.java.ru.mycompany.utils;
 
 import main.java.ru.mycompany.mutlithreading.myRealization.interfaces.Task;
 
@@ -10,7 +10,7 @@ public class TestTask implements Task {
     public void action() {
         //Thread.sleep(200);
 
-        for (int i = 0; i < 200000; i++) {
+        for (int i = 0; i < 2000; i++) {
             int b = 123 * (12 + i);
             double c = Math.exp(-b);
             double d = Math.log(c);

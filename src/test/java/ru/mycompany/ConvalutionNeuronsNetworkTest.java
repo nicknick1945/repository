@@ -1,7 +1,5 @@
 package test.java.ru.mycompany;
 
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 import main.java.ru.mycompany.neuron_wide.factory.LinksFactory;
 import main.java.ru.mycompany.neuron_wide.factory.NeuronsFactory;
 import main.java.ru.mycompany.neuron_wide.interfaces.Layers;
@@ -12,14 +10,17 @@ import main.java.ru.mycompany.сonvolutional_neural_network.ConvolutionNeuron;
 import main.java.ru.mycompany.сonvolutional_neural_network.layers.ConvolutionLayer;
 import main.java.ru.mycompany.сonvolutional_neural_network.layers.PoolLayer;
 import main.java.ru.mycompany.сonvolutional_neural_network.layers.SubsamplingLayer;
-import  static org.testng.Assert.*;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
 
 
 public class ConvalutionNeuronsNetworkTest {
 
 
     ConvolutionNeuralNetWork cnn ;      //нейросеть
-    double[][][] enterArr;              //эмуляция входных данных
+    Double[][][] enterArr;              //эмуляция входных данных
 
     @BeforeMethod()
     public void createNetWork() throws Exception {
@@ -39,7 +40,7 @@ public class ConvalutionNeuronsNetworkTest {
         layers.addLayer(subsamplingLayer);
 
         /**Заполнение массива случайными числами*/
-        enterArr = new double[1][100][100];
+        enterArr = new Double[1][128][128];
         for (int i = 0; i < enterArr.length ; i++ ){
             for(int j = 0; j < enterArr[0].length; j++){
                 for(int k = 0; k < enterArr[0][0].length; k++){
@@ -67,13 +68,9 @@ public class ConvalutionNeuronsNetworkTest {
     @Test(description = "Проверка работы слоев вертки (на кождом наборе слоев " +
             ", размер карт должен уменьшаться в двое,наборы состоят из 3-х слоев)")
     public void convolutionsTest() throws Exception {
-
-
-        double[][][] resultArray  = (double[][][])cnn.doRecognize(enterArr);
+        Double[][][] resultArray = (Double[][][]) cnn.doRecognize(enterArr);
         assertEquals(resultArray[0].length, enterArr[0].length/( ( cnn.getLayers().getSize() / 3 ) *2 ) );
         assertEquals(resultArray[0][0].length, enterArr[0][0].length/( ( cnn.getLayers().getSize()/3 ) *2 ) );
-
-        System.out.println("hellow");
     }
 
 

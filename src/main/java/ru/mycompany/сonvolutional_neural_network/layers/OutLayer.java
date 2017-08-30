@@ -24,16 +24,14 @@ public class OutLayer extends AbstractLayer {
         return null ; //todo
     }
 
-
-
     protected Object recognizeFunction(Object object){
-        double[] arr = ((double[][][])object)[0][0];
-        double[] outArr = new double[getNeurons().length];
+        Double[] arr = ((Double[][][]) object)[0][0];
+        Double[] outArr = new Double[getNeurons().length];
         for(int j = 0 ; j< getNeurons().length ; j++){
             for(int i = 0 ; i < getNeurons()[j].getLinks().length ; i++){
                 getNeurons()[j].getLinks()[i].setState(arr[i]);
             }
-            outArr[j] = (double)getNeurons()[j].getState();
+            outArr[j] = (Double) getNeurons()[j].getState();
         }
         return outArr;
     }

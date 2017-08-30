@@ -1,4 +1,4 @@
-package test.java.ru.mycompany;
+package test.java.ru.mycompany.utils;
 
 import main.java.ru.mycompany.mutlithreading.concarrencyRealization.CallTask;
 
@@ -8,7 +8,7 @@ import main.java.ru.mycompany.mutlithreading.concarrencyRealization.CallTask;
 public class TestTask2<T> extends CallTask<T> {
     @Override
     public T call() throws Exception {
-        for (int i = 0; i < 200000; i++) {
+        for (int i = 0; i < 2000; i++) {
             int b = 123 * (12 + i);
             double c = Math.exp(-b);
             double d = Math.log(c);

@@ -7,8 +7,8 @@ import main.java.ru.mycompany.neuron_wide.interfaces.LearningSample;
  */
 public class ConvolutionLearningSample implements LearningSample {
 
-    double[][] input;
-    double[] out ;
+    Double[][] input;
+    Double[] out;
 
     @Override
     public Object getInput() {
@@ -20,11 +20,11 @@ public class ConvolutionLearningSample implements LearningSample {
         return out ;
     }
 
-    public void setInput(double[][] input) {
+    public void setInput(Double[][] input) {
         this.input = input;
     }
 
-    public void setOut(double[] out) {
+    public void setOut(Double[] out) {
         this.out = out;
     }
 }

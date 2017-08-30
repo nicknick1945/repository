@@ -7,6 +7,8 @@ import main.java.ru.mycompany.mutlithreading.myRealization.interfaces.Task;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import test.java.ru.mycompany.utils.TestTask;
+import test.java.ru.mycompany.utils.TestTask2;
 
 import java.time.Instant;
 import java.util.ArrayList;
