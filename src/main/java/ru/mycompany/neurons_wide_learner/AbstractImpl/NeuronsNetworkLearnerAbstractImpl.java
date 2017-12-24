@@ -1,6 +1,9 @@
 package main.java.ru.mycompany.neurons_wide_learner.AbstractImpl;
 
-import main.java.ru.mycompany.neuron_wide.interfaces.*;
+import main.java.ru.mycompany.neuron_wide.interfaces.LearningSample;
+import main.java.ru.mycompany.neuron_wide.interfaces.Neuron;
+import main.java.ru.mycompany.neuron_wide.interfaces.NeuronNetwork;
+import main.java.ru.mycompany.neuron_wide.interfaces.NeuronsLayer;
 import main.java.ru.mycompany.neurons_wide_learner.exceptions.NotMatchCountNeuronsOutAndSamplOut;
 import main.java.ru.mycompany.neurons_wide_learner.interfaces.NeuronsNetworkLearner;
 
@@ -10,15 +13,17 @@ import main.java.ru.mycompany.neurons_wide_learner.interfaces.NeuronsNetworkLear
 public class NeuronsNetworkLearnerAbstractImpl implements NeuronsNetworkLearner{
 
     /**Ошибки нейронов на каждом из уровней при обратном распространении ошибки*/
-    private double[] neuronError;
+    private Double[] neuronError;
     /**Ошибки каждой всязи на каждом из уровней*/
-    private double[][] linksErrors;
+    private Double[][] linksErrors;
     /**Собственно нейросеть*/
     private NeuronNetwork neuronNetwork;
     //Коэффициент скорости обученя
-    private double learningSpeed = 0.001;
+    private Double learningSpeed = 0.001;
 
-    /**конструктор в качестве аргумента полкчаем нейросеть*/
+    /**
+     * конструктор в качестве аргумента получаем нейросеть
+     */
     public NeuronsNetworkLearnerAbstractImpl(NeuronNetwork neuronNetwork) {
         this.neuronNetwork = neuronNetwork;
     }
@@ -41,7 +46,7 @@ public class NeuronsNetworkLearnerAbstractImpl implements NeuronsNetworkLearner{
      * @patam delta ошибка при одстижении которой прекращается обучение
      *
      * */
-    protected void learnLimitedEpoch(LearningSample[] learningSamples,double delta){
+    protected void learnLimitedEpoch(LearningSample[] learningSamples,Double delta){
 
     }
 
@@ -64,22 +69,22 @@ public class NeuronsNetworkLearnerAbstractImpl implements NeuronsNetworkLearner{
         return learningSpeed;
     }
 
-    protected void setLearningSpeed(double learnSpeed){
+    protected void setLearningSpeed(Double learnSpeed){
         this.learningSpeed = learnSpeed;
     }
 
     /**Функция рассчета ошики уровня */
-    protected double[] calculateLayerErrors(NeuronsLayer neuronsLayer,double[] targerResult) throws Exception {
+    protected Double[] calculateLayerErrors(NeuronsLayer neuronsLayer, Double[] targerResult) throws Exception {
 
         Neuron[] neurons = neuronsLayer.getNeurons();
-        double[] errors = new double[neurons.length];
+        Double[] errors = new Double[neurons.length];
 
         if (neurons.length != targerResult.length) {
             throw  new NotMatchCountNeuronsOutAndSamplOut();
         }
 
-        for(int i = 0 ; i < neurons.length ; i ++){
-            errors[i] = targerResult[i] - (double)neurons[i].getState();
+        for(int i = 0; i < neurons.length; i++) {
+            errors[i] = targerResult[i] - (Double) neurons[i].getState();
         }
         return errors;
     }

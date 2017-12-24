@@ -7,7 +7,8 @@ public abstract class AbstractNeuron implements Neuron{
 
     private Link[] links;
 
-    protected double doActivationFunction() {
+
+    protected Double doActivationFunction() {
         double summ = 0;
         for (Link link : getLinks()) {
             summ = summ + link.getValue();
@@ -20,6 +21,13 @@ public abstract class AbstractNeuron implements Neuron{
          return doActivationFunction();
     }
 
+    public void correctWidth(Double errorSum, Double learnSpeed) {
+        for (Link link : links) {
+            Double odlMultiplexer = link.getMultiplexer();
+            Double newMultiplexer = odlMultiplexer + ((Double) getState() * (1D - (Double) getState())) * errorSum * learnSpeed;
+            link.setMultiplexer(newMultiplexer);
+        }
+    }
 
 
     public Link[] getLinks() {

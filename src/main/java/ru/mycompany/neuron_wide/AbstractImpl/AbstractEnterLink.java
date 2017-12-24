@@ -4,13 +4,14 @@ import main.java.ru.mycompany.neuron_wide.interfaces.Link;
 
 public abstract class AbstractEnterLink implements Link {
 
-    double value = 0;
-    public void setValue(double value){
+    Double value = 0D;
+
+    public void setValue(Double value) {
         this.value = value;
     }
 
     @Override
-    public double getValue() {
-        return 0;
+    public Double getValue() {
+        return 0D;
     }
 }

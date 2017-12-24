@@ -28,7 +28,19 @@ public abstract class AbstractLayer implements NeuronsLayer {
     protected abstract Object recognizeFunction(Object object);
 
     @Override
-    public abstract  Object learnLevel(Object args) ;
+    public Object learnLevel(Object args) {
+        if ((args instanceof Double[])) {
+            throw new RuntimeException("не верные параметры при передаче уровню для очучения ");
+        }
+
+        Double learnSpeed = ((Double[]) args)[1];
+        Double errorSum = ((Double[]) args)[0];
+        for (Neuron neuron : neurons) {
+            neuron.correctWidth(errorSum, learnSpeed);
+        }
+        System.out.println("очучение уровня прошло без ошибок");
+        return null;
+    }
 
     @Override
     public int getOutputSize() {

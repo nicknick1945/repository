@@ -19,5 +19,19 @@ public interface Neuron {
      */
     Link[] getLinks();
 
+    /**
+     * Функция корректировки весов для связей при
+     * соединенных к нейрону
+     *
+     * @param errorSum   общаю ошибка приходящаяся на нейрон
+     * @param learnSpeed кожффициент скорости обучения
+     */
+    void correctWidth(Double errorSum, Double learnSpeed);
+
+    /**
+     * Функция добавления связей нейрону
+     *
+     * @param links
+     */
     void setLinks(Link[] links);
 }

@@ -1,7 +1,9 @@
 package main.java.ru.mycompany.neuron_wide.AbstractImpl;
 
 import main.java.ru.mycompany.neuron_wide.exceprions.layerExceptions.HaveNotPreviousLayerException;
-import main.java.ru.mycompany.neuron_wide.exceprions.layersExceprions.*;
+import main.java.ru.mycompany.neuron_wide.exceprions.layersExceprions.DeleteLayerException;
+import main.java.ru.mycompany.neuron_wide.exceprions.layersExceprions.IllegalAddLayerArgumentException;
+import main.java.ru.mycompany.neuron_wide.exceprions.layersExceprions.IllegalDeleteLayerArgumentException;
 import main.java.ru.mycompany.neuron_wide.interfaces.*;
 
 
@@ -76,15 +78,14 @@ public abstract class AbstractNeuronLayers implements Layers {
         if (size == 1 ) {
             first = null ;
             last = null ;
-            size -- ;
-            return true ;
 
         }else {
             first.getNextLayer().setPreviousLayer(null) ;
             first = first.getNextLayer() ;
-            size-- ;
-            return true ;
+
         }
+        size--;
+        return true;
 
     }
 
@@ -93,13 +94,12 @@ public abstract class AbstractNeuronLayers implements Layers {
         if (size == 1 ){
             first = null ;
             last = null ;
-            size --;
 
         }else {
             last.getPreviousLayer().setNextLayer(null);
             last = first;
-            size-- ;
         }
+        size--;
 
     }
 

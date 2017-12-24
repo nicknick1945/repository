@@ -8,11 +8,11 @@ import main.java.ru.mycompany.neuron_wide.exceprions.linkExceptions.HaveNotDelta
  */
 public interface Link {
     /**Функция возврата результата(state*multiplexer)*/
-    double getValue();
+    Double getValue();
     /**Функция установки сосотояния*/
     void setState(double state);
     /**Функция получения вев нейрона */
-    double getMultiplexer() ;
+    Double getMultiplexer();
     /**Функия установкивеса нейрона */
     void setMultiplexer(double multiplexer);
     /**Функция корректировки веса связи*/

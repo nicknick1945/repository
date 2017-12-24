@@ -3,18 +3,17 @@ package main.java.ru.mycompany.neuron_wide.AbstractImpl;
 
 import main.java.ru.mycompany.neuron_wide.exceprions.linkExceptions.HaveNotDeltaException;
 import main.java.ru.mycompany.neuron_wide.interfaces.Link;
-import org.testng.annotations.DataProvider;
 
 public abstract class AbstractLink implements Link {
 
     private Double state = null;
-    private double multiplexer;     // коффициент умножения , он же весовой коэффициент
+    private Double multiplexer;     // коффициент умножения , он же весовой коэффициент
 
-    public double getValue (){
+    public Double getValue() {
             return multiplexer*state;   //todo подумать головой
     }
 
-    public double getMultiplexer() {
+    public Double getMultiplexer() {
         return multiplexer;
     }
 
